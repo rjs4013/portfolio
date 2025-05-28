@@ -1,0 +1,24 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain; /* 터치 시 튐 방지 */
+}
+
+.App {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* 공통 section 스타일 */
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}

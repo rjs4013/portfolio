@@ -1,0 +1,19 @@
+/* components/ContactSection.css */
+.contact-section {
+  height: 100vh;
+  background: linear-gradient(135deg, #3a7bd5, #3a6073);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  margin: 8px 0;
+}

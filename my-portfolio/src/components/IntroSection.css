@@ -1,0 +1,81 @@
+.intro-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  /* color: #222; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 40px; */
+    background: linear-gradient(135deg, #3a7bd5, #3a6073)
+}
+
+.intro-logo {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  margin-bottom: 28px;
+  color: #000000
+}
+
+.intro-greeting {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+@keyframes sparkle {
+  0%   { transform: scale(1); opacity: 1; }
+  25%  { transform: scale(1.05); opacity: 0.85; }
+  50%  { transform: scale(1); opacity: 1; }
+  75%  { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.sparkle {
+  animation: sparkle 1.8s infinite ease-in-out;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.intro-role {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.intro-role .highlight {
+  color: #0070f3;
+}
+
+.intro-description {
+  font-size: 18px;
+  color: #ffffff;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* 기존 스타일 유지 + 아래 내용 추가 */
+
+.intro-greeting-wrapper,
+.intro-role-wrapper {
+  display: inline-block;
+}
+
+.intro-greeting-char,
+.intro-role-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.5s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
