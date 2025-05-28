@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "https://rjs4013.github.io",
   "dependencies": {
     "fullpage.js": "^4.0.35",
     "react": "^19.1.0",
