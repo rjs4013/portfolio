@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: '집시크  (ZeepSeek)',
     summary: '사용자 위치 기반 조건 검색 및 시각적 탐색 지원',
-    image: '../src/assets/gif/zeepseek-demo.gif',  // ✅ 추가
+    image: `${import.meta.env.BASE_URL}assets/gif/zeepseek-demo.gif`,
     desc: '부동산 매물 추천 웹 서비스',
     tech: ['React', 'FastAPI', 'Selenium', 'Open API'],
     period: '2024.01 ~ 2024.02',
@@ -39,7 +39,7 @@ const projects = [
     id: 2,
     title: '달디단 (Daldidan)',
     summary: 'VisionCamera + YOLOv8 기반 사과 인식 및 당도 추정 앱',
-    image: '../src/assets/gif/daldidan-demo.gif',  // ✅ 추가
+    image: `${import.meta.env.BASE_URL}assets/gif/daldidan-demo.gif`,
     desc: '사과 당도 예측 모바일 앱',
     tech: ['React Native', 'YOLOv8', 'TFLite', 'VisionCamera'],
     period: '2024.03 ~ 2024.04',
@@ -79,7 +79,7 @@ const projects = [
   id: 3,
   title: '헬스장을 빼앗겼어요, 갑니다 헬스장.',
   summary: '실시간 화상 기반 1:1 운동 게임 서비스 개발',
-  image: '../src/assets/gif/health-demo.gif',  // GIF가 있다면 경로 설정
+  image: `${import.meta.env.BASE_URL}assets/gif/health-demo.gif`,
   desc: 'WebRTC와 Socket.io 활용 운동 게임 서비스',
   tech: ['React', 'WebRTC', 'TensorFlow.js', 'Pose Detection', 'Express', 'Socket.IO', 'Skia'],
   period: '2024.02 ~ 2024.03',
